@@ -65,7 +65,7 @@ myAppModule.directive('typeahead', ['searchFactory', '$timeout', function(search
               '<span class="autocomplete-title">{{item[title]}}</span>',
               '</div>',
               '<div class="autocomplete-subtitle-container">',
-              '<span class="autocomplete-subtitle">{{item[subtitle]}}</span>',
+              '<span class="autocomplete-subtitle"><strong>{{item[subtitle]}}</strong></span>',
               '<span class="autocomplete-subtitle"><em>{{item[city]}}</em></span>',
               '</div>',
               '</div>',

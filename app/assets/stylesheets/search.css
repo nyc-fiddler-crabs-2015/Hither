@@ -78,12 +78,14 @@ button.time-dur-btn {
 
 .item {
   border-top: 1px solid #95A5A6;
+  height: 50px;
 }
 
 .autocomplete-title-container {
   display: inline-block;
   float: left;
   width: 25%;
+  height: 100%;
 }
 
 .autocomplete-title {
