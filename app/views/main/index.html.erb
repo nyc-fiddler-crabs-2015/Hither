@@ -1,31 +1,33 @@
-<div class="row" ng-controller="SearchController">
-  <div class="col-md-6 col-md-offset-4" ng-show="show_input">
-    <h1><i class="fa fa-paper-plane-o"></i> Velox</h1>
-    <h6><i>"Travel, simplified."</i></h6>
-    <div>
-      <form name="searchForm" ng-submit="submit()">
-        <div class="row" id="location-inputs">
-          <div class="col-md-6" id="departure-input">
-            <typeahead items="airports" prompt="Departure..." title="code" subtitle="name" city="city" model="search.depart_location" on-select="onItemSelected()" />
-          </div><br><br>
-          <div class="col-md-6" id="arrival-input">
-            <typeahead items="airports" prompt="Destination..." title="code" subtitle="name" city="city" model="search.arrival_location" on-select="onItemSelected()" />
+<div ng-controller="SearchController">
+  <div class="container">
+    <div class="col-md-6 col-md-offset-4" ng-show="show_input">
+      <h1><i class="fa fa-paper-plane-o"></i> Velox</h1>
+      <h6><i>"Travel, simplified."</i></h6>
+      <div>
+        <form name="searchForm" ng-submit="submit()">
+          <div class="row" id="location-inputs">
+            <div class="col-md-6" id="departure-input">
+              <typeahead items="airports" prompt="Departure..." title="code" subtitle="name" city="city" model="search.depart_location" on-select="onItemSelected()" />
+            </div><br><br>
+            <div class="col-md-6" id="arrival-input">
+              <typeahead items="airports" prompt="Destination..." title="code" subtitle="name" city="city" model="search.arrival_location" on-select="onItemSelected()" />
+            </div>
           </div>
-        </div>
-        <div class="row" id="date-inputs">
-          <div class="col-md-6">
-            <label>Departure Date:</br>
-              <input type="date" class="form-control" name="depart_date" id="depart-date" ng-model="search.depart_date">
-            </label>
+          <div class="row" id="date-inputs">
+            <div class="col-md-6">
+              <label>Departure Date:</br>
+                <input type="date" class="form-control" name="depart_date" id="depart-date" ng-model="search.depart_date">
+              </label>
+            </div>
+            <div class="col-md-6 hidden">
+              <label>Return Date:</br>
+                <input type="date" class="form-control" name="return_date" id="return-date" ng-model="search.return_date">
+              </label>
+            </div>
           </div>
-          <div class="col-md-6 hidden">
-            <label>Return Date:</br>
-              <input type="date" class="form-control" name="return_date" id="return-date" ng-model="search.return_date">
-            </label>
-          </div>
-        </div>
-        <input type="submit" class="btn btn-primary search-submit-btn" ng-click="show_input=false; show_filter=true">
-      </form>
+          <input type="submit" class="btn btn-primary search-submit-btn" ng-click="show_input=false; show_filter=true">
+        </form>
+      </div>
     </div>
   </div>
 

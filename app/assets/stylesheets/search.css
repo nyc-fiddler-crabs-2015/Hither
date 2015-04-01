@@ -20,17 +20,23 @@ button.time-dur-btn {
   margin-top: 20px;
 }
 
+.filter-list {
+  background-color: #E74C3C;
+}
+
 .filter-option {
   margin-top: 10px;
 }
 
 .filter-option-label {
-  float: left;
+  display: inline-block;
+}
+
+.filter-option-container {
   display: inline-block;
 }
 
 .filter-option-switch {
-  float: right;
   display: inline-block;
 }
 
