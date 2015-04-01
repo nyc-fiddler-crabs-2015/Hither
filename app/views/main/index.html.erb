@@ -5,10 +5,10 @@
     <div>
       <form name="searchForm" ng-submit="submit()">
         <div class="row" id="location-inputs">
-          <div class="col-md-6">
+          <div class="col-md-6" id="departure-input">
             <typeahead items="airports" prompt="Departure..." title="code" subtitle="city" model="search.depart_location" on-select="onItemSelected()" />
           </div><br><br>
-          <div class="col-md-6">
+          <div class="col-md-6" id="arrival-input">
             <typeahead items="airports" prompt="Destination..." title="code" subtitle="city" model="search.arrival_location" on-select="onItemSelected()" />
           </div>
         </div>

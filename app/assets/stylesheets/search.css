@@ -1,7 +1,3 @@
-.search-bar {
-  width: 100%;
-}
-
 /*remove blue outline around buttons*/
  .btn:focus,.btn:active:focus,.btn.active:focus,
 .btn.focus,.btn:active.focus,.btn.active.focus {
@@ -49,7 +45,15 @@ button.time-dur-btn {
 .search-bar {
   margin-bottom: 0px;
   position: absolute;
+  width: 100%;
+}
+
+#departure-input .search-bar{
   z-index: 20000;
+}
+
+#arrival-input .search-bar {
+  z-index: 18000;
 }
 
 .items {
@@ -60,9 +64,16 @@ button.time-dur-btn {
   height: auto;
   width: 100%;
   display: block;
-  z-index: 10000;
   padding: 2px 5px 0px 5px;
   border-radius: 4px;
+}
+
+#departure-input .items {
+  z-index: 19000;
+}
+
+#arrival-input .items {
+  z-index: 17000;
 }
 
 .item {
