@@ -28,30 +28,50 @@
     <div class="col-xs-5">
       <div class="btn-embossed" id="filter-switches">
         <div class="row">
-          <span class="filter-option-switch btn-embossed">
-            <span class="filter-option-switch-inner fa fa-sun-o"></span>
-          </span>
-          <span class="filter-option-switch btn-embossed">
-            <span class="filter-option-switch-inner fa fa-moon-o"></span>
-          </span>
+
+          <input type="checkbox" id="depart-am" ng-model="options.departam_status" ng-change="updateFlights()">
+            <label for="depart-am">
+              <span class="filter-option-switch btn-embossed">
+                <span class="filter-option-switch-inner fa fa-sun-o"></span>
+              </span>
+            </label>
+
+          <input type="checkbox" id="depart-pm" ng-model="options.departpm_status" ng-change="updateFlights()">
+          <label for="depart-pm">
+            <span class="filter-option-switch btn-embossed">
+              <span class="filter-option-switch-inner fa fa-moon-o"></span>
+            </span>
+          </label>
+
         </div>
         <div class="row">
-          <span class="filter-option-switch btn-embossed">
-            <span class="filter-option-switch-inner fa fa-sun-o"></span>
-          </span>
-          <span class="filter-option-switch btn-embossed">
-            <span class="filter-option-switch-inner fa fa-moon-o"></span>
-          </span>
+          <input type="checkbox" id="arrive-am" ng-model="options.arriveam_status" ng-change="updateFlights()">
+          <label for="arrive-am">
+            <span class="filter-option-switch btn-embossed">
+              <span class="filter-option-switch-inner fa fa-sun-o"></span>
+            </span>
+          </label>
+
+          <input type="checkbox" id="arrive-pm" ng-model="options.arrivepm_status" ng-change="updateFlights()">
+          <label for="arrive-pm">
+            <span class="filter-option-switch btn-embossed">
+              <span class="filter-option-switch-inner fa fa-moon-o"></span>
+            </span>
+          </label>
+
         </div>
-        <div class="row">
-          <span class="filter-option-switch">
-            <span class="filter-option-switch-inner fa fa-home"></span>
-          </span>
+        <div class="row flat-switch">
+          <input type="checkbox" class="flat-switch" id="airbnb" ng-model="airBnb_status" ng-change="airBnb()">
+          <label for="airbnb">
+            <span class="ui"></span>
+          </label>
         </div>
-        <div class="row">
-          <span class="filter-option-switch">
-            <span class="filter-option-switch-inner fa fa-arrow-circle-right"></span>
-          </span>
+
+        <div class="row flat-switch">
+          <input type="checkbox" class="flat-switch" id="direct-flight" ng-model="options.direct_status" ng-change="updateFlights()">
+          <label for="direct-flight">
+            <span class="ui"></span>
+          </label>
         </div>
       </div>
     </div>
