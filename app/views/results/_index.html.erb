@@ -10,11 +10,11 @@
 <div ng-controller="TripController">
     <div class="three-column-container" ng-controller="HotelController">
 
-        <div class="col-md-2 col" ng-show="show_filter">
+        <div class="col-md-2 col" id="filters" ng-show="show_filter">
             <%= render "filters/filter" %>
         </div>
 
-        <div class="itinerary" ng-show="show_filter">
+        <div id="itinerary" ng-show="show_filter">
 
             <div class="col-md-5 col trip-content" ng-hide="show_flight_results">
                 <%= render "trips/price" %>
