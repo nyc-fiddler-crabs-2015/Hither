@@ -46,3 +46,11 @@ div.panel-heading {
   background-color: #BDC3C7 !important;
   color: #2C3E50 !important;
 }
+
+@media only screen and (max-width : 700px) {
+  #filters {
+    position: fixed;
+    bottom: 0px;
+    width: 100% !important;
+  }
+}
