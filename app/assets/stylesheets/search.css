@@ -80,13 +80,29 @@ button.time-dur-btn {
   border-top: 1px solid #95A5A6;
 }
 
+.autocomplete-title-container {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+
 .autocomplete-title {
   padding: 0px 5px 0px 5px;
-  min-width: 200px;
+  min-width: auto;
+  font-size: 1.15em;
+}
+
+.autocomplete-subtitle-container {
+  display: inline;
+  height: 100%;
+  width: 75%;
 }
 
 .autocomplete-subtitle {
-  font-size: 0.75em;
+  font-size: 0.70em;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  display: block;
 }
 
 .left-arrow {
