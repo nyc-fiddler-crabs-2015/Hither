@@ -21,7 +21,32 @@ button.time-dur-btn {
 }
 
 .filter-list {
-  background-color: #E74C3C;
+  background-color: #67809F;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 2px;
+}
+
+.filter-list-inner {
+  height: auto;
+  padding-right: 10px;
+}
+
+#filter-switches {
+  height: 100%;
+  background-color: #34495E;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 3px 3px 3px 0px;
+  border-radius: 3px;
+}
+
+#filter-labels {
+  margin-right: 0px;
+  padding-top: 10px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .filter-option {
@@ -29,7 +54,11 @@ button.time-dur-btn {
 }
 
 .filter-option-label {
-  display: inline-block;
+  display: block;
+  padding: 10px 8px 0px 12px;
+  color: #E4F1FE;
+  font-size: 1.15em;
+  line-height: 1.2;
 }
 
 .filter-option-container {
@@ -38,6 +67,14 @@ button.time-dur-btn {
 
 .filter-option-switch {
   display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #22313F;
+  color: white;
+  margin: 3px auto 3px auto;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 5px;
 }
 
 .trip-content, .hotel-content {
