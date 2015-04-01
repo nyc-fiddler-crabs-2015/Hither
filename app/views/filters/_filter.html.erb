@@ -1,5 +1,5 @@
 <div class='wrapper text-center'>
-    <div class="btn-group btn-group-xs" data-toggle="buttons">
+    <div class="btn-group btn-group" data-toggle="buttons">
         <button type="button" class="btn btn-default time-dur-btn active" ng-click="show_flight_results=true">
             <input type="radio" name="options" id="option1"> <i class="fa fa-clock-o fa-lg"></i>
         </button>
@@ -11,8 +11,18 @@
 
 <div class="filter-list">
     <div class="filter-option row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-3">
+                    AM
+                </div>
+                <div class="col-md-3">
+                    PM
+                </div>
+            </div>
         <div class="filter-option-label">
-            Departure AM
+            Departure
         </div>
         <div class="filter-option-switch">
             <input type="checkbox" id="test1" ng-model="options.departam_status" ng-change="updateFlights()"><label for="test1"><span class="ui"></span></label>
