@@ -2,15 +2,10 @@
 <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
 <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
 
-
-<div ng-controller="ItineraryController" ng-show="show_filter">
-    <button class="btn btn-default" id="save-itinerary-button" ng-click="create()">Save</button>
-</div>
-
 <div ng-controller="TripController">
     <div class="three-column-container" ng-controller="HotelController">
 
-        <div class="col-md-3 col-xs-4 col" id="filters" ng-show="show_filter">
+        <div class="col-md-2 col" id="filters" ng-show="show_filter">
             <%= render "filters/filter" %>
         </div>
 
@@ -25,6 +20,9 @@
 
             <div class="col-md-5 col hotel-content">
                 <%= render "hotels/results" %>
+            </div>
+            <div ng-controller="ItineraryController" ng-show="show_filter">
+                <button class="btn btn-default" id="save-itinerary-button" ng-click="create()">Save</button>
             </div>
         </div>
     </div>

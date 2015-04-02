@@ -4,8 +4,18 @@
     outline: none;
 }
 
+.wrapper {
+  margin: 3px;
+  height: auto;
+}
+
 button.time-dur-btn {
-  width: 70px;
+  width: 50%;
+}
+
+.main-toggle {
+  width: 100%;
+  margin: 0px 0px 0px 0px !important;
 }
 
 .btn-default {
@@ -25,6 +35,7 @@ button.time-dur-btn {
   padding-top: 3px;
   padding-bottom: 3px;
   border-radius: 2px;
+  z-index: 20000;
 }
 
 .filter-list-inner {
@@ -32,10 +43,15 @@ button.time-dur-btn {
   padding-right: 10px;
 }
 
+#filters {
+  z-index: 20;
+}
+
 #filter-switches {
   height: 100%;
   background-color: #34495E;
-  padding-left: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 5px;
   padding-bottom: 20px;
   margin: 3px 3px 3px 0px;
@@ -45,7 +61,7 @@ button.time-dur-btn {
 #filter-labels {
   margin-right: 0px;
   padding-top: 10px;
-  padding-left: auto;
+  padding-left: 5px;
   padding-right: auto;
 }
 
@@ -57,8 +73,8 @@ button.time-dur-btn {
   display: block;
   padding: 15px 8px 0px 25px;
   color: #E4F1FE;
-  font-size: 1.15em;
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.65;
 }
 
 .filter-option-container {
@@ -91,6 +107,8 @@ input[type="checkbox"]:not(:checked) + label span.filter-option-switch {
 .row.flat-switch {
   padding-top: -10%;
   padding-bottom: 10%;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .trip-content, .hotel-content {
