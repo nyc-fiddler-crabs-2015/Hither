@@ -37,6 +37,10 @@ p.itinerary-details {
   font-size: 2em;
 }
 
+.user-section {
+  padding-left: 30px;
+}
+
 .itinerary-header {
   padding-top: 5px;
   padding-bottom: 15px;
